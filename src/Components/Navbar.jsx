@@ -1,40 +1,36 @@
-import { FaHome, FaInfoCircle, FaEnvelope } from "react-icons/fa";
+import { FaBolt, FaHome, FaInfoCircle, FaRocket, FaEllipsisH } from "react-icons/fa";
 
 export default function Navbar() {
   return (
-    <nav className="bg-white shadow-lg fixed w-full top-0 z-50 border-b border-cyan-100">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <div className="flex items-center space-x-3">
-          <h1 className="text-2xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-500 tracking-wide drop-shadow">
-            InfraVerse
-          </h1>
+    <nav className="fixed w-full top-0 left-0 z-50 bg-black/40 backdrop-blur-sm">
+      <div className="flex items-center justify-between px-8 py-4">
+        {/* InfraVerse Branding */}
+        <div className="flex items-center gap-2">
+          <FaBolt className="text-cyan-400 text-2xl" />
+          <span className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-purple-400">
+            Infra<span className="text-purple-300">Verse</span>
+          </span>
         </div>
-        <ul className="flex space-x-6 text-[1.07rem] font-semibold">
+        {/* Center Navigation */}
+        <ul className="hidden md:flex gap-8 items-center font-semibold text-white/90">
           <li>
-            <a
-              href="#"
-              className="flex items-center gap-2 text-gray-600 hover:text-cyan-600 transition-colors duration-200 px-3 py-2 rounded-md hover:bg-cyan-50 focus:outline-none focus:ring-2 focus:ring-cyan-300"
-            >
-              <FaHome className="text-cyan-400 text-xl" />
-              Home
+            <a href="#" className="flex items-center gap-2 hover:text-cyan-300 transition">
+              <FaHome className="text-cyan-300" /> Home
             </a>
           </li>
           <li>
-            <a
-              href="#"
-              className="flex items-center gap-2 text-gray-600 hover:text-purple-600 transition-colors duration-200 px-3 py-2 rounded-md hover:bg-purple-50 focus:outline-none focus:ring-2 focus:ring-purple-300"
-            >
-              <FaInfoCircle className="text-purple-400 text-xl" />
-              About
+            <a href="#" className="flex items-center gap-2 hover:text-purple-300 transition">
+              <FaInfoCircle className="text-purple-300" /> About
             </a>
           </li>
           <li>
-            <a
-              href="#"
-              className="flex items-center gap-2 text-gray-600 hover:text-emerald-600 transition-colors duration-200 px-3 py-2 rounded-md hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-emerald-300"
-            >
-              <FaEnvelope className="text-emerald-400 text-xl" />
-              Contact
+            <a href="#" className="flex items-center gap-2 hover:text-emerald-300 transition">
+              <FaRocket className="text-emerald-300" /> Projects
+            </a>
+          </li>
+          <li>
+            <a href="#" className="flex items-center gap-2 hover:text-blue-300 transition">
+              <FaEllipsisH className="text-blue-300" /> Others
             </a>
           </li>
         </ul>

@@ -1,5 +1,3 @@
-
-
 ::-webkit-scrollbar {
   width: 8px;
   background: #e5e7eb;
@@ -11,12 +9,10 @@
 .animate-spin-slow {
   animation: spin 2.5s linear infinite;
 }
-
 @keyframes spin {
   0% { transform: rotate(0deg);}
   100% { transform: rotate(360deg);}
 }
-
 .button-primary {
   background: linear-gradient(90deg, #2563eb 0%, #4f46e5 100%);
   color: white;
@@ -29,7 +25,6 @@
 .button-primary:hover {
   background: linear-gradient(90deg, #4f46e5 0%, #2563eb 100%);
 }
-
 section {
   padding-top: 3rem;
   padding-bottom: 3rem;
