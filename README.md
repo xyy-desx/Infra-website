@@ -30,7 +30,6 @@ It combines a responsive **React + Vite + Tailwind CSS** frontend with a powerfu
 | Icons | React Icons | Icon components |
 | Backend | Node.js + Express.js | RESTful API server |
 | Database | PostgreSQL | Persistent data storage |
-| ORM / Query | pg / Sequelize / Prisma *(optional)* | Database management |
 | Version Control | Git + GitHub | Collaboration and code management |
 
 ---
